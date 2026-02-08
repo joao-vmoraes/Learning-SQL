@@ -1,0 +1,17 @@
+version: "3"
+services:
+  mysql_knex:
+    image: mysql:8.0
+    container_name: mysql_knex
+
+    environment:
+      MYSQL_ROOT_PASSWORD: senha
+      MYSQL_DATABASE: base_de_dados
+      MYSQL_USER: usuario
+      MYSQL_PASSWORD: senha
+
+    ports:
+      - "3306:3306"
+
+    volumes:
+      - ./mysql_data:/var/lib/mysql
