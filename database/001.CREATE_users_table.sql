@@ -9,4 +9,4 @@ CREATE TABLE `users` (
     PRIMARY KEY (`id`),
     UNIQUE KEY `users_un_email` (`email`),
     UNIQUE KEY `users_un_password_hash` (`password_hash`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

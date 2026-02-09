@@ -1,4 +1,3 @@
-version: "3"
 services:
   mysql_knex:
     image: mysql:8.0
@@ -18,4 +17,5 @@ services:
 
     volumes:
       - ./database:/docker-entrypoint-initdb.d
-      - mysql_data:/var/lib/mysql
+      - ./mysql_data:/var/lib/mysql
+
