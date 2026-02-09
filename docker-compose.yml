@@ -12,6 +12,10 @@ services:
 
     ports:
       - "3306:3306"
+    
+    command:
+    - --default_time_zone=America/Sao_Paulo
 
     volumes:
-      - ./mysql_data:/var/lib/mysql
+      - ./database:/docker-entrypoint-initdb.d
+      - mysql_data:/var/lib/mysql
